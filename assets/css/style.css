@@ -144,9 +144,9 @@ hr {
     margin: 5px 0;
 }
 #circle-cover-bg{
-    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    background: url('../images/reasons-image.webp') no-repeat top center/cover;
     height: 90vW;
-    width: 90vw
+    width: 90vw;
     margin-bottom; 20px;
     border-radius: 50%;
     max-width: 300px;
@@ -158,7 +158,25 @@ hr {
     justify-content: center;
 
 }
+#times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    /* handles responsivity without the need for a media query*/
+    display: flex;
+    flex-wrap: wrap;
+}
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
 
+#times h3 {
+    color: #fafafa;
+}
 /* Media Query: tablets and larger (768px and up) */
 @media screen  and (min-width: 768px){
     /* Header */
